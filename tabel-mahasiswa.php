@@ -52,7 +52,10 @@ $conn->close();
                                         <td><?php echo $rows['jurusan']; ?></td>
                                         <td><?php echo $rows['alamat']; ?></td>
                                         <td><?php echo $rows['gender']; ?></td>
-                                        <td><?php echo $rows['id']; ?></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger">Hapus</button>
+                                        </td>
                                     </tr>
                                 <?php endwhile ?>
                             <?php endif ?>

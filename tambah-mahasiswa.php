@@ -17,8 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             $success = "Data berhasil ditambahkan!";
-            header("Location: tabel-mahasiswa.php");
-            exit();
+            header("Refresh: 2; url=tabel-mahasiswa.php");
         } else {
             $error = "Error: " . $conn->error;
         }
@@ -92,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="#" class="btn btn-secondary">Batal</a>
+                        <a href="tabel-mahasiswa.php" class="btn btn-secondary">Batal</a>
                     </div>
                 </form>
             </div>
